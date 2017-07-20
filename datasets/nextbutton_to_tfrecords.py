@@ -85,7 +85,7 @@ def _process_image(directory, name):
       width: integer, image width in pixels.
     """
     # Read the image file.
-    filename = directory + _DIRECTORY_IMAGES + name + '.png'
+    filename = os.path.join(directory, _DIRECTORY_IMAGES, name + '.png')
     image_data = tf.gfile.FastGFile(filename, 'rb').read()
 
     # Image shape.
