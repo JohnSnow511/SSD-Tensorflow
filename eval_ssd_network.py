@@ -57,7 +57,7 @@ tf.app.flags.DEFINE_integer(
 tf.app.flags.DEFINE_integer(
     'eval_image_size', None, 'Eval image size.')
 tf.app.flags.DEFINE_boolean(
-    'remove_difficult', True, 'Remove difficult objects from evaluation.')
+    'remove_difficult', False, 'Remove difficult objects from evaluation.')
 
 # =========================================================================== #
 # Main evaluation flags.

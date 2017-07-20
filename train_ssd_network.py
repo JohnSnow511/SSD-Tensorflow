@@ -24,7 +24,7 @@ import tf_utils
 
 slim = tf.contrib.slim
 
-DATA_FORMAT = 'NCHW'
+DATA_FORMAT = 'NHWC'
 
 # =========================================================================== #
 # SSD Network flags.
@@ -151,7 +151,7 @@ tf.app.flags.DEFINE_integer(
     'batch_size', 32, 'The number of samples in each batch.')
 tf.app.flags.DEFINE_integer(
     'train_image_size', None, 'Train image size')
-tf.app.flags.DEFINE_integer('max_number_of_steps', None,
+tf.app.flags.DEFINE_integer('max_number_of_steps', 500,
                             'The maximum number of training steps.')
 
 # =========================================================================== #
